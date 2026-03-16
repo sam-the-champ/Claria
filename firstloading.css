@@ -1,0 +1,51 @@
+.logo {
+    width: 250px;
+    height: auto;
+    opacity: 0;
+    animation: fadeInLogo 1.5s ease forwards ;
+}
+
+@keyframes fadeInLogo {
+    to {
+        opacity: 1;
+    }
+}
+
+.splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #6a1c81;
+    flex-direction: column;
+}
+
+.logo-container h1 {
+    margin-top: 8px;
+    font-size: 1.5em;
+    color: #a29aa3;
+    opacity: 0;
+    animation: fadeInText 1.5s ease forwards;
+    animation-delay: 1.5s; /* Delay the text animation until the logo has faded in */
+    text-align: center;
+    line-height: 1.8;
+}
+
+@keyframes fadeInText {
+    to {
+        opacity: 1;
+    }
+}   
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    list-style: none;
+    background: #550597; 
+}
+
+.logo-container {
+    text-align: center;
+}

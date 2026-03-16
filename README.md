@@ -3,14 +3,7 @@
  Claria is a rule-based diagnostic system designed to help frontend developers identify productivity blockers and receive structured, category-based recommendations.
 This app uses a JSON-based decision engine, score accumulation, and category classification to evaluate users’ productivity challenges and generate actionable advice.
 
-🎯 Purpose
-Many frontend mentees struggle with:
-Inconsistent coding habits
-Skill gaps
-Burnout
-Lack of roadmap clarity
-This system provides a structured self-diagnosis tool to help them identify their primary productivity issue and receive targeted guidance.
-
+🎯 Purpose 
 🧠 System Architecture
 Tech Stack
 Vanilla JavaScript

@@ -1,94 +1,39 @@
- .onboarding_card {
-    width: 320px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
-    margin: 40px auto;
-    padding: 32px 16px 0 16px;
+ #onboarding_container {
+    max-width: 100%;
+    width: 250px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    height: 350px;
+    border-radius: 20px;
+ }
+ 
+ .onboarding_card { 
+    animation: fadeInCard 0.5s ease forwards;
+    display: none;
     position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    min-height: 420px;
 }
-
-.skip-link {
-    position: absolute;
-    top: 28px;
-    left: 16px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    z-index: 2;
-    background-color: #39b634;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-
-
-.back-link {
-    position: absolute;
-    top: 28px;
-    left: 370px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    z-index: 2;
-    background-color: #39b634;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-
-
-
-.back-link1 {
-    position: absolute;
-    top: 46px;
-    left: 370px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    z-index: 2;
-    background-color: #39b634;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-
-.skip-link1 {
-    position: absolute;
-    top: 46px;
-    left: 16px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    z-index: 2;
-    background-color: #39b634;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-
-.onboarding-image {
-    width: 100%;
+ 
+.onboarding_card.active { 
     display: block;
-    border-radius: 10px;
-    box-shadow: 0px 10px 26px rgba(0,0,0,0.25);
+}
+ 
+@keyframes fadeInCard {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-
-.onboarding-image2 {
-    width: 100%;
-    display: block;
-     border-radius: 10px;
-    box-shadow: 0px 10px 26px rgba(0,0,0,0.25);
-    margin-bottom: 10px;
-}
-    
-.onboarding-image3 {
-    width: 100%;
-    display: block;
-      border-radius: 10px;
-    box-shadow: 0px 10px 26px rgba(0,0,0,0.25);
-    
+.onboarding-image { 
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
 }
 
 .onboarding-title {
@@ -100,141 +45,79 @@
     line-height: 1;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
-.onboarding-title2 {
-    margin: 0 0 4px 0;
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-    line-height: 0.6;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.onboarding-desc {
-    text-align: center;
-    margin-bottom: 32px;
-        font-size: 1.1em;
-        color: #555;
-}
-
-
-.onboarding-desc2 {
-    text-align: center;
-        font-size: 1.1em;
-        color: #555;
-        font: 1em sans-serif;
-
-}
-
+ 
 .onboarding_card .next-btn {
-    width: 100%;
+    width: 30%;
     padding: 12px 0;
-    background: #39b634;
-    color: #fff;
+    background: #ffff;
+    color:  rgb(112, 25, 163);
     border: none;
-    border-radius: 0 0 12px 12px;
+    border-radius: 22px;
     font-size: 16px;
     cursor: pointer;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom:0;
 }
 body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: 'poppins', sans-serif;
     margin: 0;
     padding: 20px;
+    background: linear-gradient( #41105e, #550597, #6a1983, #6d3c94, #9b6bb6);
+    background-size: 400% 400%;
+    animation: bgmove 10s ease infinite;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 0;
+@keyframes bgmove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+ 
+h2 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.movement {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-     border-bottom: 1px solid #ccc;
+    margin-top: 60px;
+    padding: 0 20px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 24px;
-    position: relative;
-} 
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
+.skip {
+    background:rgba(rgb(119, 0, 255, 0.3));
+    color: rgb(112, 25, 163);
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
- 
-
-/* Remove overlay background and add main centering */
-.onboarding_overlay {
-    background: none;
-    position: static;
-    width: auto;
-    height: auto;
-}
-
-.onboarding_main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 60vh;
-    max-height: 70vh;
-    height: 65vh;
-    margin-top: 32px;
-}
-
-.onboarding_card {
-    width: 100%;
-    max-width: 420px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
-    padding: 32px 16px 0 16px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100%;
-    height: 110%;
-    top: 25px;
-}
-
-/* Progress Dots */
-.progress-dots {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 10px;
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #d3d3d3;
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
+    transition: transform 0.2s ease, background 0.3s ease;  
 }
 
-.dot.active {
-    background-color: #39b634;
+.next-btn {
+    background: #fff;
+    color: rgb(112, 25, 163);
 }
-
-.progress-dots2 {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 10px;
-}
- 
