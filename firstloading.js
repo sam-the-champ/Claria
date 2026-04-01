@@ -1,6 +1,6 @@
 setTimeout(() => {
     window.location.href = "first_loading.html";
-}, 5000); // Redirect after 5 seconds
+}, 8000); // Redirect after 5 seconds
 
 
 

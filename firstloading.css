@@ -1,7 +1,7 @@
 .logo {
     width: 250px;
     height: auto;
-    opacity: 0;
+    opacity: 3;
     animation: fadeInLogo 1.5s ease forwards ;
 }
 
@@ -29,6 +29,7 @@
     animation-delay: 1.5s; /* Delay the text animation until the logo has faded in */
     text-align: center;
     line-height: 1.8;
+    font-family: sans-serif;
 }
 
 @keyframes fadeInText {
@@ -44,6 +45,7 @@ body {
     font-family: poppins, sans-serif;
     list-style: none;
     background: #550597; 
+    align-items: center;
 }
 
 .logo-container {
