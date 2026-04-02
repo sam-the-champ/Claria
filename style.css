@@ -64,14 +64,13 @@
 body {
     font-family: 'poppins', sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 53px;
     background: linear-gradient( #41105e, #550597, #6a1983, #6d3c94, #9b6bb6);
     background-size: 400% 400%;
     animation: bgmove 10s ease infinite;
     color: #fff;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: hidden;
